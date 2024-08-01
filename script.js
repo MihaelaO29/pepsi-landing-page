@@ -15,7 +15,7 @@ document.querySelectorAll('.buttons_product').forEach((element, indexOfElement) 
         const button = document.querySelector('.content_info_button');
         const navigationLinks = document.querySelectorAll('.nav_menu_link');
 
-        // verificam indexul elementului
+        
         if (indexOfElement === 0) {
             body.style.backgroundColor = BLUE_COLOR;
             image.src = BLUE_IMAGE;

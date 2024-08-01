@@ -44,6 +44,7 @@ body {
 
 .content {
     height: 500px;
+    width: 100%;
     display: flex;
     align-items: center;
     margin: 0px 50px;
@@ -73,7 +74,6 @@ body {
     @media screen and (min-width: 1050px) {
         display: none;
     }
-
 }
 
 .content_info_title {
@@ -127,7 +127,7 @@ body {
     }
 }
 
-.buttons {
+.all_buttons_img {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -135,22 +135,28 @@ body {
     bottom: 8px;
     left: 50%;
     right: 50%;
+    transform: translateX(-50%);
+}
+
+.buttons {
+    height: 120px;
+    margin: 0 8px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .buttons_product {
     margin: 0 8px;
-}
-
-.buttons_product img {
     width: 50px;
-    transition: 0.2s ease-in-out;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
 }
 
-.buttons_product img:hover {
-    -webkit-transform: translateY(-12px);
+.buttons:hover .buttons_product {
     transform: translateY(-12px);
-    transition: 0.2s ease-in-out;
-    cursor: pointer
+    filter: brightness(1.4);
+    cursor: pointer;
 }
 
 .content_info_button {
